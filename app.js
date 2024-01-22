@@ -29,10 +29,6 @@ app.use(
 );
 app.disable("x-powered-by");
 
-app.get("/", (req, res) => {
-  res.json({ message: "Hola mundo" });
-});
-
 app.get("/movies", (req, res) => {
   const { genre } = req.query;
   let responseMovies = movies;
